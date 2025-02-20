@@ -1,0 +1,125 @@
+/* Admin Panel Container */
+.admin-panel-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.food-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Inputs */
+.food-input, 
+.food-select, 
+.food-button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Food List Grid */
+.food-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Food Item Card */
+.food-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.food-card:hover {
+  transform: scale(1.02);
+}
+
+/* Food Image */
+.food-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Food Text */
+.food-text {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Buttons */
+.food-button {
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.food-add-button {
+  background: #28a745;
+  color: white;
+  border: none;
+}
+
+.food-add-button:hover {
+  background: rgb(25, 153, 25);
+}
+
+.food-edit-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.food-edit-button:hover {
+  background: #0056b3;
+}
+
+.food-delete-button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.food-delete-button:hover {
+  background: #b22222;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .admin-panel-container {
+    width: 90%;
+  }
+
+  .food-input, .food-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .food-image {
+    height: 150px;
+  }
+}

@@ -1,0 +1,42 @@
+.header{
+    height: 36vw;
+    /* margin:  0px auto; */
+    background: url('/src/img/header5.png') no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 90%;
+}
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    top: 30%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+.main-heading{
+    font-weight: 500;
+    font-size: max(3.5vw,15px);
+    font-family: 'Kaushan Script';
+}
+.header-contents p{
+    font-size: 1.2vw;
+    font-family:sans-serif;
+}
+.header-contents button{
+    border: none;
+    color:wheat;
+    font-weight: 500;
+    padding: 1vw 2.1vw;
+    background-color: #101011;
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@media screen {
+    
+}
